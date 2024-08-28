@@ -31,27 +31,25 @@ export default function Apartment() {
     }, [id, navigate]);
 
     return (
-        <div>
-            {product.pictures && <ImageSlider images={product.pictures} />}
-            <div className="infos">
-                <div className="infos-title">
-                    <h1 className="apartment-title">{product.title}</h1>
-                    <h2 className="apartment-gps">{product.location}</h2>
-                </div>
-                <Host id={id} />
-            </div>
-            <div className="tags-rating">
-                {product.tags && <Tags tags={product.tags} />}
-                {product.rating && <Rating rating={product.rating} />}
-            </div>
-            <div className="apartment-accordions">
-                {product.description && (
-                    <Accordion title="Description" description={product.description} />
-                )}
-                {product.equipments && (
-                    <Accordion title="Equipements" entities={product.equipments} />
-                )}
-            </div>
+      <div>
+        {product.pictures && <ImageSlider images={product.pictures} />}
+
+        <div className="infos">
+          <h1 className="apartment-title">{product.title}</h1>
+          {product.host && <Host host={product.host} />}
+          <h2 className="apartment-gps">{product.location}</h2>
+
+          {product.tags && <Tags tags={product.tags} />}
+          {product.rating && <Rating rating={product.rating} />}
         </div>
+        <div className='apartment-accordions'>
+          {product.description && (
+            <Accordion title="Description" description={product.description} />
+          )}
+          {product.equipments && (
+            <Accordion title="Equipements" entities={product.equipments} />
+          )}
+        </div>
+      </div>
     );
 }

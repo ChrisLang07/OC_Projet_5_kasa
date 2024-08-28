@@ -9,10 +9,8 @@ export default function Rating({rating}) {
       
     return (
         <div className="rating-stars">
-          <div className="red-stars">
             <Stars number={redStars} starImg={redStar}/>
             <Stars number={greyStars} starImg={greyStar} />
           </div>
-        </div>
     );
 };

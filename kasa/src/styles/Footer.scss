@@ -1,7 +1,7 @@
 @import 'Colors.scss';
 @import 'Font.scss';
 
-.footer {
+.footer-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,10 +9,6 @@
     gap: 50px;
     height: 209px;
     background-color: $black;
-
-    @media (max-width: 768px) {
-
-    }
 
     .logoWhite {
         width: 122px;

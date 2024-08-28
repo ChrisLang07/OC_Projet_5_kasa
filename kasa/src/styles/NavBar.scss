@@ -25,6 +25,7 @@
 
         @media (max-width: 768px) {
          gap: 30px; 
+         padding: 0;
         }
 
         &--link {
@@ -43,6 +44,13 @@
 
             .active {
                 text-decoration: underline;
+            }
+
+            .not-active {
+
+                @media (max-width: 768px) {
+                    text-transform: uppercase;
+                }
             }
         }
     }

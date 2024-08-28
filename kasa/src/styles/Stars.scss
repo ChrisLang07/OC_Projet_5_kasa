@@ -3,14 +3,8 @@
 
 .rating-stars {
     display: flex;
-    justify-content: flex-start;
-
-    .grey-stars,
-        .red-stars {
-            display: flex;
-            justify-content: flex-start;
-            gap: 10px;
-        };
+    justify-content: flex-end;
+    gap: 10px;
 
     .star {
         width: 24px;
