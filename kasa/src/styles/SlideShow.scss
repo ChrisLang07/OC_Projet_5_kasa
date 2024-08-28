@@ -1,0 +1,27 @@
+.slider {
+    position: relative;
+
+    .slider-button {
+        display:flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .slider-img {
+            width: 46px;
+            height: 79px;
+            
+        };
+    };
+
+    .slider-pic {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    };
+    
+};

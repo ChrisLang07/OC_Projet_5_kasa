@@ -1,0 +1,51 @@
+@import 'Colors.scss';
+@import 'Font.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        min-width: 190px;    
+    }
+
+    .navbar-logo {
+        max-width: 210px;
+        height: 68px;
+
+        @media (max-width: 768px) {
+            max-width: 145px;
+            height: 46px;
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+        gap: 60px;
+
+        @media (max-width: 768px) {
+         gap: 30px; 
+        }
+
+        &--link {
+            list-style: none;
+
+            a {
+                font-size: 24px;
+                font-weight: 500;
+                text-decoration: none;
+                color: $black;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+
+            .active {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}

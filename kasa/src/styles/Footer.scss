@@ -1,0 +1,31 @@
+@import 'Colors.scss';
+@import 'Font.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 209px;
+    background-color: $black;
+
+    @media (max-width: 768px) {
+
+    }
+
+    .logoWhite {
+        width: 122px;
+        height: 39px;
+    }
+
+    .footer-text {
+        font-size: 24px;
+        font-weight: 500;
+        color: $white;
+
+        @media (max-width: 768px) {
+            font-size: 12px;;
+        }
+    }
+}

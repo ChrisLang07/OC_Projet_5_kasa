@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import 'Colors.scss';
+@import 'Font.scss';
+@import 'NavBar.scss';
+
+.container {
+    max-width: 1240px;
+    margin: 50px auto;
+    font-family: $main-font;
+
+    @media (max-width: 768px) {
+     min-width: 335px;
+     margin: 20px 10px;   
+    }
+
+}

@@ -1,0 +1,58 @@
+@import 'Colors.scss';
+@import 'Font.scss';
+
+
+.accordion-item {
+    margin-bottom: 10px;
+    position: relative;
+
+    .accordion-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 52px;
+        padding: 0 20px;
+        border-radius: 10px;
+        background-color: $red;
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $main-font;
+        color: $white;
+
+
+        .accordion-button-img {
+            width: 20px;
+            transform: rotate(180deg);
+            transition: transform 0.1s ease;
+
+            &:hover {
+                opacity: 0.5;
+            };
+        };
+    };
+
+    .accordion-content {
+        position: relative;
+        max-height: 0;
+        z-index: -1;
+        overflow: hidden;
+        transition: max-height 0.1s ease;
+        border-radius: 10px 10px 5px 5px;
+        background-color: $grey;
+        
+
+        .accordion-text, text {
+                font-size: 18px;
+                font-weight: 400;
+                padding: 15px;
+                line-height: 25px;
+                text-align: justify;
+
+            .text {
+                margin: 0;
+            };
+        };
+    };
+};

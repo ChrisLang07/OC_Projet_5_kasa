@@ -1,0 +1,31 @@
+@import 'Colors.scss';
+@import 'Font.scss';
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+  
+    .number {
+      font-size: 288px;
+      font-weight: 700;
+      line-height: 230px;
+      margin: 0;
+      color: $red;
+    }
+  
+    .oups {
+      font-size: 36px;
+      font-weight: 500;
+      color: $red;
+    }
+  
+    .back-to-home {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 100px;
+      color: $black;
+    }
+  }

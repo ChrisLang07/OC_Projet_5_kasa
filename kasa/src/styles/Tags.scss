@@ -1,0 +1,26 @@
+@import 'Colors.scss';
+@import 'Font.scss';
+
+.tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .tags {
+        display: flex;
+        gap: 10px;
+    
+        .tag-text {
+            font-size: 14px;
+            font-weight: 700;
+            width: 115px;
+            height: 25px;
+            padding: 0 10px;
+            text-align: center;
+            line-height: 25px;
+            color: $white;
+            background-color: $red;
+            border-radius: 10px;
+        };
+    };
+};
