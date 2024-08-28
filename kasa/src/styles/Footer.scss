@@ -4,15 +4,15 @@
 .footer-logo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     height: 209px;
     background-color: $black;
 
     .logoWhite {
         width: 122px;
         height: 39px;
+        margin-top: 40px;
     }
 
     .footer-text {

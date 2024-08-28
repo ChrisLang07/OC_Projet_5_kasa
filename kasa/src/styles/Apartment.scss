@@ -4,11 +4,11 @@
 .infos {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 70px 50px 50px;
-    margin-top: 20px;
+    grid-template-rows: 60px 40px 45px;
+    margin-top: 10px;
 
     .apartment-title {
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
         font-size: 36px;
         font-weight: 500;
         margin: 0;
@@ -37,7 +37,6 @@
 .apartment-accordions {
     display: flex;
     gap: 100px;
-    margin-top: 20px;
 
     .accordion-item {
         width: 50%;
