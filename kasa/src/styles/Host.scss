@@ -3,21 +3,45 @@
 
 .profile {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     gap: 10px;
+    grid-column: 4 / 6;
+    justify-content: end;
+    
+        @media (max-width: 768px) {
+            grid-row: 4;
+            justify-content: end;
+            align-items: center;
+        }
 
     .profile-name {
         font-size: 18px;
         font-weight: 500;
         color: $red;
         text-align: right;
-        width: 50%;
+        width: 55%;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            font-size: 15px;
+        }
     }
 
     .profile-pic {
         width: 64px;
         height: 64px;
         border-radius: 50%;
+
+        @media (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 48px;
+            height: 48px;
+        }
     }
 };
