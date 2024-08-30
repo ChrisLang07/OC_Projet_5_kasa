@@ -32,16 +32,18 @@
             height: 41px;
         }
 
+            .accordion-button-img {
+                width: 20px;      
+        
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
 
-        .accordion-button-img {
-            width: 20px;
-            transform: rotate(180deg);
-            transition: transform 0.5s ease;
-
-            &:hover {
-                opacity: 0.5;
-            };
-        };
+            .open {
+                transform: rotate(180deg);
+                transition: transform 0.5s ease;
+            }
     };
 
     .accordion-content {
@@ -49,7 +51,7 @@
         max-height: 0;
         z-index: -1;
         overflow: hidden;
-        transition: max-height 0.1s ease;
+        transition: max-height 0.3s ease;
         border-radius: 10px 10px 5px 5px;
         background-color: $grey;
         
@@ -76,5 +78,13 @@
         
             };
         };
-    };
+    }
+
+    .shown {
+        max-height: 9999px;
+    }
+
+    .hidden {
+        max-height: 0;
+    }
 };

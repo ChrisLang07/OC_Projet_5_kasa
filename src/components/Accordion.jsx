@@ -16,17 +16,15 @@ const Accordion = ({ title, entities, description }) => {
         <div className="accordion-item">
           <button className="accordion-button" onClick={toggleAccordion}>
             {title}
-            <img className='accordion-button-img'
-              style={{ transform: isOpen ? "rotate(0deg)" : null }}
+            <img className={`accordion-button-img ${isOpen ? 'open': ''}`}
               src={Arrow}
               alt="arrow"
             />
           </button>
           <div
             ref={contentRef}
-            className="accordion-content"
-            style={{
-              maxHeight: isOpen? `${contentRef.current.scrollHeight}px`: "0px",}} >
+            className={`accordion-content ${isOpen ? 'shown': 'hidden'}`}
+            >
             
             <div className='accordion-text'>
               {entities &&
