@@ -1,6 +1,7 @@
-import ArrowLeft from '../assets/arrow_left.png';
-import ArrowRight from '../assets/arrow_right.png';
-import '../styles/SlideShow.scss';
+import Counter from './Counter';
+import ArrowLeft from '../assets/images/arrow_left.png';
+import ArrowRight from '../assets/images/arrow_right.png';
+import '../assets/styles/components/SlideShow.scss';
 
 
 import React, { useState } from 'react';
@@ -26,7 +27,8 @@ const ImageSlider = ({ images = [] }) => {
                 <img className="slider-img" src={ArrowRight} alt='next button' onClick={nextImage} />
             </div>
                 <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slider-pic" />
-        </div>
+                <Counter imageIndex={currentIndex} array={images} />
+            </div>
     );
 };
 

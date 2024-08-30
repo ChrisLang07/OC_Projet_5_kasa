@@ -1,4 +1,4 @@
-import '../styles/Stars.scss';
+import '../assets/styles/components/Stars.scss';
 
 export default function Stars({number, starImg}) {
 

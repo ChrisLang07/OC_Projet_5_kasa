@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import 'Colors.scss';
-@import 'Font.scss';
-@import 'NavBar.scss';
+@import './MainColors/Colors.scss';
+@import './MainFonts/Font.scss';
+@import './components/NavBar.scss';
 
 .container {
     max-width: 1240px;

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import Arrow from '../assets/arrow.png';
-import '../styles/Accordion.scss';
+import Arrow from '../assets/images/arrow.png';
+import '../assets/styles/components/Accordion.scss';
 
 const Accordion = ({ title, entities, description }) => {
 

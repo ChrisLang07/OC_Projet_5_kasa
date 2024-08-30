@@ -1,6 +1,6 @@
 import Stars from './Stars';
-import greyStar from '../assets/grey-star.png';
-import redStar from '../assets/red-star.png';
+import greyStar from '../assets/images/grey-star.png';
+import redStar from '../assets/images/red-star.png';
 
 export default function Rating({rating}) {
 

@@ -1,6 +1,6 @@
 import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
-import Background from '../assets/background_home.png';
+import Background from '../assets/images/background_home.png';
 
 export default function Home() {
   return (

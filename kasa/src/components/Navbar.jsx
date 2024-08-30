@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Logo from '../assets/kasa.png';
+import Logo from '../assets/images/kasa.png';
 
 export default function Navbar() {
     return (

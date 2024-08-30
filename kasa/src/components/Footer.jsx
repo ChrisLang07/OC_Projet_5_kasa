@@ -1,5 +1,5 @@
-import LogoWhite from '../assets/kasa_white.png';
-import '../styles/Footer.scss';
+import LogoWhite from '../assets/images/kasa_white.png';
+import '../assets/styles/components/Footer.scss';
 
 export default function Footer() {
     return (

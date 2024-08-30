@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Card from "./pages/Card";
 import Apartment from './pages/Apartment';
 import NoPage from "./pages/NoPage";
-import './styles/Main.scss';
+import './assets/styles/Main.scss';
 
 export default function App() {
   return (

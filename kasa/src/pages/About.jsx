@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import FetchDatas from '../components/FetchDatas';
 import Accordion from '../components/Accordion';
-import Background from '../assets/background_about.png';
-import '../styles/About.scss';
+import Background from '../assets/images/background_about.png';
+import '../assets/styles/components/About.scss';
 
 export default function About() {
 

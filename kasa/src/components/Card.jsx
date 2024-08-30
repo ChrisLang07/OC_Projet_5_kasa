@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../styles/Card.scss';
+import '../assets/styles/components/Card.scss';
 
 export default function Card({ location }) {
 

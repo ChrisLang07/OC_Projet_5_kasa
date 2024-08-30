@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Card from "./Card";
 import FetchDatas from './FetchDatas';
-import '../styles/Gallery.scss';
+import '../assets/styles/components/Gallery.scss';
 
 export default function Gallery() {
     const [products, setProducts] = useState([]);
