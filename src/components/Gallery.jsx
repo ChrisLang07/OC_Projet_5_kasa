@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Card from "./Card";
+import Card from "../pages/Card";
 import FetchDatas from './FetchDatas';
 import '../assets/styles/components/Gallery.scss';
 
