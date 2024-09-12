@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import FetchDatas from '../components/FetchDatas';
 import Host from '../components/Host';
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
@@ -17,18 +16,22 @@ export default function Apartment() {
     const url = 'http://localhost:3000/logements.json';
 
     useEffect(() => {
-        async function getData() {
-            const response = await FetchDatas(url);
-            const location = response.find(location => id === location.id);
-            
-            if (location) {
-                setProduct(location);
-            } else {
-                navigate('/404');
-            }
-        };
-
-        getData();
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const location = data.find((location) => id === location.id);
+          if (location) {
+            setProduct(location);
+          } else {
+            navigate("/404");
+          }
+        })
+        .catch((error) => console.log(error));
     }, [id, navigate]);
 
     return (

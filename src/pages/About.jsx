@@ -1,21 +1,24 @@
 import { useState, useEffect } from "react";
-import FetchDatas from '../components/FetchDatas';
 import Accordion from '../components/Accordion';
 import Background from '../assets/images/background_about.png';
 import '../assets/styles/components/About.scss';
 
 export default function About() {
-
   const [lists, setLists] = useState([]);
+  const url = 'http://localhost:3000/lists.json';
 
   useEffect(() => {
-    async function getData() {
-      const response = await FetchDatas('http://localhost:3000/lists.json');
-      setLists(response);
-    }
-    getData();
-  
+    fetch(url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status:${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => setLists(data))
+    .catch((error) => console.log(error));
   }, []);
+    
 
   return (
     <div>

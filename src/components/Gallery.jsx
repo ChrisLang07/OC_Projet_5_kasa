@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Card from "../pages/Card";
-import FetchDatas from './FetchDatas';
 import '../assets/styles/components/Gallery.scss';
 
 
@@ -9,13 +8,15 @@ export default function Gallery() {
     const url = 'http://localhost:3000/logements.json';
 
     useEffect(() => {
-      async function getData() {
-        const response = await FetchDatas(url);
-        setProducts(response);
-      }
-      
-      getData();
-    
+      fetch(url)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => setProducts(data))
+      .catch((error) => console.log(error))
     }, []);
 
     return (
