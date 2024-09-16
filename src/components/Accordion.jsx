@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import Arrow from '../assets/images/arrow.png';
 import '../assets/styles/components/Accordion.scss';
 
@@ -36,7 +37,12 @@ const Accordion = ({ title, entities, description }) => {
           </div>
         </div>
     );
-
 };
+
+Accordion.propTypes = {
+  title: PropTypes.string,
+  entities: PropTypes.array,
+  description: PropTypes.string
+}
 
 export default Accordion;

@@ -7,7 +7,15 @@
         position: relative;
         height: 340px;
         border-radius: 10px;
-        background-color: $red;
+        background: 
+        linear-gradient(
+          180deg, 
+          rgba(255, 255, 255, 0) 0%, 
+          rgba(10, 10, 10, 0) 42%, 
+          rgba(4, 4, 4, 0.205) 99.99%, 
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        $red;
 
         .grid-card--img {
             width: 100%;
